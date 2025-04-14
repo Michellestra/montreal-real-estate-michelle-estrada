@@ -99,22 +99,11 @@
     --accent-color: rgb(63, 77, 159);
     --highlight-color: #f3c;
   
-    --titles-font: "Cinzel Decorative", serif;
-    --bodytext-font: "Sorts Mill Goudy", serif;
+    --titles-font: "Cormorant Garamond", serif;
+    --bodytext-font: "Crimson Text", serif;
 
    
-    .cinzel-decorative-bold {
-      font-family: "Cinzel Decorative", serif;
-      font-weight: 700;
-      font-style: normal;
-    }
-    
-
-    .sorts-mill-goudy-regular {
-      font-family: "Sorts Mill Goudy", serif;
-      font-weight: 400;
-      font-style: normal;
-    }
+   
     
 
 
@@ -150,33 +139,47 @@
 
    h2{
     line-height: 1;
-    margin: 2em 0 2em 0;
+    margin: 3rem 0 4.5rem 0;
    }
 
    h3{
     line-height: 1;
-    margin: 2em 0 2em 0;
+    margin: 2rem 0 2rem 0;
    }
 
    h4{
-    margin: 2em 0 2em 0;
+    line-height: 1;
+    margin: 2rem 0 2rem 0;
    }
 
    h5{
-    margin: 2em 0 2em 0;
+    line-height: 1;
+    margin: 2rem 0 2rem 0;
    }
 
    h6{
-    margin: 2em 0 2em 0;
+    line-height: 1;
+    margin: 2rem 0 2rem 0;
    }
 
    p {
-    margin: 0 0 1em 0;
+    margin: 0 0 1rem 0;
   }
 
   h2+ h3 {
-    margin: 1.4em 0 1em 0;
+    margin: 0rem 0 1.5rem 0;
   }
+
+   ol {
+    list-style-type: decimal;
+    margin-left: 2rem;
+  }
+
+  ul {
+    list-style-type: circle;
+    margin-left: 2rem;
+  }
+  
   
   legend {font-size: 1.842em; }
 
@@ -199,13 +202,23 @@
   }
 
 
-  h1,h2,h3,h4,h5,h6,label,legend {
+  h1,h3,h4,h5,h6,label,legend {
     font-family: var(--titles-font);
     color: var(--titles-color);
     font-optical-sizing: auto;
     font-weight: 900;
     font-style: normal;
   }
+
+
+h2{
+  font-family: "Cormorant Infant", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-transform:capitalize;
+}
+
   
   
   
