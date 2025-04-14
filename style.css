@@ -202,7 +202,7 @@
   }
 
 
-  h1,h3,h4,h5,h6,label,legend {
+  h1,h4,h5,h6,label,legend {
     font-family: var(--titles-font);
     color: var(--titles-color);
     font-optical-sizing: auto;
@@ -216,7 +216,7 @@ h2{
   font-optical-sizing: auto;
   font-weight: 400;
   font-style: normal;
-  text-transform:capitalize;
+  text-transform:uppercase;
 }
 
   
