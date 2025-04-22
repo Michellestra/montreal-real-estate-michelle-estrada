@@ -70,7 +70,7 @@
 /* COLOR PALETTE & FONTS VARIABLES  */
 
 :root {
-    --header-bg-color: rgb(107 213 137);
+    --header-bg-color: rgb(247 243 255);
     --header-fg-color: rgb(1, 35, 70);
   
     --topNav-bg-color: rgb(255, 255, 255);
@@ -93,14 +93,15 @@
     --border-color-light: #ff0000;
     --border-color-dark: #444;
   
-    --titles-color: #1c0263;
+    --titles-color: #4C4C4C;
     --bodytext-color: #444444;
   
-    --accent-color: rgb(63, 77, 159);
+    --accent-color: rgb(228 255 229);
     --highlight-color: #f3c;
   
-    --titles-font: "Cormorant Garamond", serif;
-    --bodytext-font: "Crimson Text", serif;
+    --titles-font: "Baskerville", serif;
+    --subtitles-font: "Montserrat", sans-serif;
+    --bodytext-font: "Montserrat", sans-serif;
 
    
    
@@ -123,52 +124,77 @@
     https://spencermortensen.com/articles/typographic-scale/  */
 
 
-  h1 { font-size: 2.5em; }
-  h2 { font-size: 2.1459em; }
-  h3 { font-size: 1.842em; }
-  h4 { font-size: 1.5811em; }
-  h5 { font-size: 1.3572em; }
-  h6 { font-size: 1.165em; }
-  p { font-size: 1em; }
-  small { font-size: .8584em; }
+    h1 { font-size: 2em; }
+    h2 { font-size: 1.7411em; }
+    h3 { font-size: 1.1em; }
+    h4 { font-size: 1.3195em; }
+    h5 { font-size: 1.1487em; }
+    p { font-size: 1em; }
+    small { font-size: .8706em; }
 
+
+
+  
   h1{
     margin: 1em 0 0.7em 0.3em;
     line-height: 1.2;
+    font-family: var(--titles-font);
+    font-weight: 400;
+    font-style: normal;
    }
 
    h2{
     line-height: 1;
-    margin: 3rem 0 4.5rem 0;
+    margin: 3rem 0 1.5rem 0;
+    font-family: var(--subtitles-font);
+    text-transform: uppercase;
    }
+
+   h2:has(+ h3) {
+    margin: 3rem 0 0.5rem 0;
+  }
+
+  h2+ h3 {
+    margin: 0 0 1rem 0;
+  }
 
    h3{
     line-height: 1;
-    margin: 2rem 0 2rem 0;
+    margin: 3rem 0 1rem 0;
+    font-family: var(--subtitles-font);
+    text-transform: uppercase;
    }
 
    h4{
     line-height: 1;
-    margin: 2rem 0 2rem 0;
+    margin: 2rem 0 1rem 0;
+    font-family: var(--subtitles-font);
+    text-transform: uppercase;
    }
 
    h5{
     line-height: 1;
     margin: 2rem 0 2rem 0;
+    font-family: var(--subtitles-font);
+    text-transform: uppercase;
    }
 
    h6{
     line-height: 1;
     margin: 2rem 0 2rem 0;
+    font-family: var(--subtitles-font);
+    text-transform: uppercase;
    }
 
    p {
     margin: 0 0 1rem 0;
+    font-family: var(--bodytext-font);
   }
 
-  h2+ h3 {
-    margin: 0rem 0 1.5rem 0;
+  textarea{
+    max-width: 100%;
   }
+
 
    ol {
     list-style-type: decimal;
@@ -202,23 +228,14 @@
   }
 
 
-  h1,h3,h4,h5,h6,label,legend {
-    font-family: var(--titles-font);
+ h3,h4,h5,h6,label,legend {
+
     color: var(--titles-color);
     font-optical-sizing: auto;
-    font-weight: 900;
+    font-weight: 300;
     font-style: normal;
     text-transform: uppercase;
   }
-
-
-h2{
-  font-family: "Cormorant Infant", serif;
-  font-optical-sizing: auto;
-  font-weight: 400;
-  font-style: normal;
-  text-transform:uppercase;
-}
 
   
   
@@ -249,6 +266,13 @@ header .branding {
   
   header .description {}
   
+
+
+  .flex-container {
+    padding: 0 1rem 0 1rem;
+  }
+
+
   
   .search-form {
     display: flex;
@@ -450,6 +474,10 @@ ul#menu {
 
 @media screen and (min-width: 60rem) {
 
+  html,body{
+    font-size: 88%;
+  }
+
     h1 { font-size: 3em; }
     h2 { font-size: 2.498em; }
     h3 { font-size: 2.0801em; }
@@ -504,6 +532,7 @@ aside {
 
 main {
     width: 70%;
+    margin: 0 0.5rem;
     max-width: 90rem;
     background-color: white;
 }
